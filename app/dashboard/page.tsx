@@ -3,9 +3,6 @@ import DashboardFooter from "@/Components/DashboardFooter";
 import DashboardHeader from "@/Components/DashboardHeader";
 import SideBar from "@/Components/SideBar";
 import Upload from "@/Components/Upload";
-import { auth } from "@/config/firebase";
-import { signOut } from "firebase/auth";
-import Image from "next/image";
 import React, { useState } from "react";
 
 const page = () => {

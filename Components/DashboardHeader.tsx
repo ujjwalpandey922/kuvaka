@@ -9,6 +9,7 @@ import React from "react";
 const DashboardHeader = () => {
   const router = useRouter();
   const handleLogOut = async () => {
+    console.log("LOGOUT")
     try {
       await signOut(auth);
       router.push("/");
@@ -33,7 +34,7 @@ const DashboardHeader = () => {
       </span>
 
       {/* User Icons */}
-      <button className="relative cursor-pointer" onClick={() => handleLogOut}>
+      <button className="relative cursor-pointer" onClick={ handleLogOut}>
         {/* User Circle Icon */}
         <Image alt="userIcon" src="/UserCircle.png" width={32} height={32} />
         {/* Notification Badge */}
