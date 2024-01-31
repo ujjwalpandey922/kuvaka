@@ -14,7 +14,8 @@ const Upload = ({
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className="max-w-[640px] max-h-[486px] p-4 w-full h-full flex justify-center items-center gap-8 flex-col border-dashed bg-neutral-900 rounded-[27.59px] border-2 border-zinc-100 m-auto">
+    <div className="max-w-[640px]  p-4  lg:m-auto lg:my-8 my-12 mx-auto w-full h-full flex justify-center items-center lg:gap-8 gap-4 flex-col border-dashed bg-neutral-900 rounded-[27.59px] border-2 border-zinc-100 ">
+      
       {/* Title */}
       <h1 className="text-center text-stone-300 text-lg font-normal font-['DM Sans'] capitalize leading-[18px] mt-8 mb-auto">
         {title}
@@ -24,7 +25,7 @@ const Upload = ({
       <div className="flex flex-col gap-1">
         {/* Upload button */}
         <button
-          className="lg:max-w-lg w-full px-[125px] py-[18px] bg-gradient-to-b from-lime-300 to-lime-600 rounded-[40px] justify-start items-center gap-2 inline-flex"
+          className="lg:max-w-lg w-full lg:px-[125px] lg:py-[18px] px-4 py-2 bg-gradient-to-b from-lime-300 to-lime-600 rounded-[40px] justify-start items-center gap-2 inline-flex"
           onClick={() => setOpenModal(true)}
         >
           <div className="text-center flex gap-2 items-center justify-center text-neutral-900 text-base font-medium font-['Gothic A1'] capitalize leading-[18px] cursor-pointer hover:scale-105 transition-all">
