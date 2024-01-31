@@ -3,10 +3,14 @@ import React from "react";
 const Features = () => {
   return (
     <div className="bg-yellow-400 mt-auto py-16 relative ">
+      {/* Section title */}
       <h1 className="lg:text-yellow-400 text-white max-w-[85rem] px-8  mx-auto py-8 relative text-6xl z-20 font-extralight font-['Oswald']">
         FEATURES
       </h1>
+      {/* Features container */}
       <div className=" bg-white flex justify-around flex-wrap z-20 relative items-center p-4 shadow-lg max-w-[75rem] w-full mx-auto">
+        {" "}
+        {/* Feature Left Side */}
         <div className="flex flex-col gap-4 w-full max-w-lg">
           <div className="flex gap-4 p-2">
             <div className="w-[0] h-[182px] border-4 border-yellow-400"></div>
@@ -47,6 +51,7 @@ const Features = () => {
             </div>
           </div>
         </div>
+        {/* Feature Right Side */}
         <div className="flex flex-col gap-4 w-full max-w-lg">
           <div className="flex gap-4 p-2">
             <div className="w-[0] h-[182px] border-4 border-yellow-400"></div>

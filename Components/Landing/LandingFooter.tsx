@@ -1,15 +1,16 @@
 import Image from "next/image";
 import React from "react";
 
+// LandingFooter component for the footer section
 const LandingFooter = () => {
   return (
     <div className="bg-neutral-600 mt-auto justify-around gap-8 w-full p-4 py-32 flex flex-wrap">
       {/* COMPANY */}
-
       <div className="max-w-[250px] min-h-[273px] flex-col justify-start items-start gap-[15px] inline-flex">
         <div className="text-amber-300 text-2xl font-bold font-['Open Sans']">
           COMPANY
         </div>
+        {/* Various links under COMPANY section */}
         <div className="text-white text-2xl font-normal font-['Open Sans']">
           About us
         </div>
@@ -26,11 +27,13 @@ const LandingFooter = () => {
           Fitness Plans
         </div>
       </div>
+
       {/* Detox */}
       <div className="w-[250px] h-[273px] flex-col justify-start items-start gap-[15px] inline-flex">
         <div className="text-amber-300 text-2xl font-bold font-['Open Sans']">
           DEATOX +
         </div>
+        {/* Various links under DEATOX + section */}
         <div className="text-white text-2xl font-normal font-['Open Sans']">
           Partner with us
         </div>
@@ -47,11 +50,13 @@ const LandingFooter = () => {
           t&c for business
         </div>
       </div>
+
       {/* Contact Us */}
       <div className="w-[250px] h-[129px] flex-col justify-start items-start gap-[15px] inline-flex">
         <div className="text-amber-300 text-2xl font-bold font-['Open Sans']">
           CONTACT US
         </div>
+        {/* Various links under CONTACT US section */}
         <div className="text-white text-2xl font-normal font-['Open Sans']">
           Help and support
         </div>
@@ -60,6 +65,7 @@ const LandingFooter = () => {
         </div>
       </div>
 
+      {/* DEATOX Logo Image */}
       <Image width={270} height={240} alt="gif" src={"/deatoxWhite.png"} />
     </div>
   );

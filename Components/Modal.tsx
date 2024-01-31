@@ -1,7 +1,7 @@
-"use client";
 import Image from "next/image";
 import React, { useRef } from "react";
 
+// Modal component for uploading files
 const Modal = ({
   setShowModal,
 }: {
@@ -18,6 +18,7 @@ const Modal = ({
       setShowModal(false);
     }
   };
+
   return (
     <div
       // Modal backdrop styling
@@ -32,8 +33,9 @@ const Modal = ({
         ref={inner}
       >
         {/* Modal content */}
-        <div className="flex flex-col justify-center  h-full items-center gap-8 relative">
+        <div className="flex flex-col justify-center h-full items-center gap-8 relative">
           <span>
+            {/* Close icon */}
             <Image
               src={"/XCircle.svg"}
               alt="fileUp"
@@ -43,13 +45,16 @@ const Modal = ({
               onClick={() => setShowModal(false)}
             />
           </span>
+          {/* Modal title */}
           <h1 className="text-zinc-100 text-[28px] font-semibold text-center font-['Gothic A1'] capitalize leading-7">
             Upload file from
           </h1>
-          <div className="w-full  justify-around items-center  inline-flex">
+          {/* Options for file upload */}
+          <div className="w-full justify-around items-center inline-flex">
             <div className="w-40 flex-col justify-center items-center gap-4 inline-flex">
+              {/* Folder option */}
               <div className="self-stretch h-[120px] py-[34px] bg-stone-900 rounded-2xl justify-center items-center inline-flex">
-                <div className="w-[31.24px] h-[52px] relative  shadow-inner flex-col justify-start items-start flex">
+                <div className="w-[31.24px] h-[52px] relative shadow-inner flex-col justify-start items-start flex">
                   <Image
                     src={"/Frame3.svg"}
                     alt="fileUp"
@@ -63,6 +68,7 @@ const Modal = ({
               </div>
             </div>
             <div className="w-40 flex-col justify-center items-center gap-4 inline-flex">
+              {/* My Desktop option */}
               <div className="self-stretch h-[120px] px-12 py-7 bg-stone-900 rounded-2xl justify-center items-center inline-flex">
                 <Image
                   src={"/Desktop.svg"}

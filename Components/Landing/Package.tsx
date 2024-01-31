@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
+// Package component for showcasing different subscription packages
 const Package = () => {
   return (
     <div className="w-full bg-gradient-to-b mt-auto to-neutral-600 from-yellow-400 via-neutral-600 py-16 relative">
+      {/* Background Image */}
       <Image
         src="/packageBgImg.png"
         alt="bg"
@@ -11,7 +13,9 @@ const Package = () => {
         height="700"
         className="absolute -z-10 top-0 right-0"
       />
-      <header className="flex lg:flex-row flex-col   gap-8 w-full max-w-[85rem] mx-auto my-8 z-20 relative">
+
+      {/* Header Section */}
+      <header className="flex lg:flex-row flex-col gap-8 w-full max-w-[85rem] mx-auto my-8 z-20 relative">
         <div className="flex px-8 w-[440px] flex-col flex-wrap gap-2">
           <h1 className="text-white text-6xl font-bold font-['Oswald']">
             DEATOX
@@ -35,9 +39,12 @@ const Package = () => {
           </button>
         </div>
       </header>
-      <div className="flex gap-8 flex-wrap justify-center ">
+
+      {/* Package Options */}
+      <div className="flex gap-8 flex-wrap justify-center">
         {/* MONTHLY */}
-        <div className="max-w-[422px] w-full p-8 z-20  relative bg-yellow-400">
+        <div className="max-w-[422px] w-full p-8 z-20 relative bg-yellow-400">
+          {/* Decorative Corner Background */}
           <div className="absolute top-0 left-0">
             <Image
               src="/packageDetoxCornerBg.png"
@@ -45,6 +52,7 @@ const Package = () => {
               width="70"
               height="70"
             />
+            {/* Detox Icon */}
             <Image
               src="/packageDetox.png"
               alt="bg"
@@ -53,7 +61,8 @@ const Package = () => {
               className="absolute top-[25%] left-[25%]"
             />
           </div>
-          <div className="flex max-w-[300px] m-auto w-full  justify-start items-start gap-4 my-8 flex-col ">
+          {/* Package Details */}
+          <div className="flex max-w-[300px] m-auto w-full justify-start items-start gap-4 my-8 flex-col">
             <h1 className="text-white text-2xl font-bold font-['Oswald']">
               MONTHLY
             </h1>
@@ -61,20 +70,24 @@ const Package = () => {
               $9.99
             </span>
             <div className="w-[280px] h-[0px] border-2 border-neutral-600"></div>
-            <ul className=" relative left-4  flex flex-col gap-4 list-disc text-neutral-600 max-w-[240px] text-base font-normal font-['Open Sans'] leading-7">
+            {/* Features List */}
+            <ul className="relative left-4 flex flex-col gap-4 list-disc text-neutral-600 max-w-[240px] text-base font-normal font-['Open Sans'] leading-7">
               <li>Customized workout plans</li>
               <li>Access to healthy recipes</li>
               <li>Advanced health tracking tools</li>
               <li>Personalized recommendations based on your goals</li>
               <li>Unlimited customer support</li>
             </ul>
+            {/* Button */}
             <button className="bg-neutral-600 text-center w-full p-3 text-white">
               GET NOW
             </button>
           </div>
         </div>
+
         {/* YEARLY */}
-        <div className="max-w-[422px] w-full p-8  relative bg-yellow-400">
+        <div className="max-w-[422px] w-full p-8 relative bg-yellow-400">
+          {/* Decorative Corner Background */}
           <div className="absolute top-0 left-0">
             <Image
               src="/packageDetoxCornerBg.png"
@@ -82,6 +95,7 @@ const Package = () => {
               width="70"
               height="70"
             />
+            {/* Detox Icon */}
             <Image
               src="/packageDetox.png"
               alt="bg"
@@ -90,7 +104,8 @@ const Package = () => {
               className="absolute top-[25%] left-[25%]"
             />
           </div>
-          <div className="flex max-w-[300px] m-auto w-full justify-start items-start gap-4 my-8 flex-col ">
+          {/* Package Details */}
+          <div className="flex max-w-[300px] m-auto w-full justify-start items-start gap-4 my-8 flex-col">
             <h1 className="text-white text-2xl font-bold font-['Oswald']">
               YEARLY
             </h1>
@@ -98,22 +113,27 @@ const Package = () => {
               $9.99
             </span>
             <div className="w-[280px] h-[0px] border-2 border-neutral-600"></div>
-            <ul className=" relative left-4  flex flex-col gap-4 list-disc text-neutral-600 max-w-[240px] text-base font-normal font-['Open Sans'] leading-7">
+            {/* Features List */}
+            <ul className="relative left-4 flex flex-col gap-4 list-disc text-neutral-600 max-w-[240px] text-base font-normal font-['Open Sans'] leading-7">
               <li>Customized workout plans</li>
               <li>Access to healthy recipes</li>
               <li>Advanced health tracking tools</li>
               <li>Personalized recommendations based on your goals</li>
               <li>Unlimited customer support</li>
             </ul>
+            {/* Button */}
             <button className="bg-neutral-600 text-center w-full p-3 text-white">
               GET NOW
             </button>
           </div>
         </div>
+
         {/* ENTERPRISE */}
-        <div className="max-w-[422px]  p-8  w-full relative bg-white">
+        <div className="max-w-[422px] p-8 w-full relative bg-white">
+          {/* Decorative Top Background */}
           <div className="absolute top-0 left-0">
             <Image src="/yellowTop.png" alt="bg" width="70" height="70" />
+            {/* Detox Icon */}
             <Image
               src="/packageDetox.png"
               alt="bg"
@@ -122,7 +142,8 @@ const Package = () => {
               className="absolute top-[25%] left-[25%]"
             />
           </div>
-          <div className="flex max-w-[300px] m-auto w-full justify-start items-start gap-4 my-8 flex-col  h-full">
+          {/* Package Details */}
+          <div className="flex max-w-[300px] m-auto w-full justify-start items-start gap-4 my-8 flex-col h-full">
             <h1 className="text-neutral-600 mb-12 text-2xl font-bold font-['Oswald']">
               ENTERPRISE
             </h1>
@@ -133,6 +154,7 @@ const Package = () => {
               <br />
               Our Enterprise Plan brings you the best features.
             </p>
+            {/* Button */}
             <button className="bg-yellow-400 text-center mt-auto mb-16 w-full p-3 text-white">
               CONTACT US
             </button>
