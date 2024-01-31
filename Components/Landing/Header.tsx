@@ -53,14 +53,12 @@ const Header = () => {
         {/* Left Side Image */}
         <div className="lg:flex hidden relative justify-center items-center w-[40%]">
           {/* Circles */}
-          {[478, 578, 682, 774].map((size, index) => (
-            <div
-              key={index}
-              className={`w-[${size}px] h-[${size}px] rounded-full border-8 border-amber-300 absolute border-opacity-${
-                80 - index * 20
-              }`}
-            />
-          ))}
+          <div className="w-[478px] h-[478px] rounded-full border-8 border-amber-300 absolute" />
+          <div className="w-[578px] h-[578px] rounded-full border-8 border-amber-300 absolute border-opacity-80" />
+          <div className="w-[682px] h-[682px] rounded-full border-8 border-amber-300 absolute border-opacity-60" />
+          <div className="w-[774px] h-[774px] rounded-full border-8 border-amber-300 absolute border-opacity-40" />
+          <div className="w-[862px] h-[862px] rounded-full border-8 border-amber-300 absolute border-opacity-20" />
+         
           {/* Main and Other Images */}
           <Image width={400} height={400} alt="gif" src={"/deatoxWhite.png"} />
           {[
